@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "test_poetry_github_b"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "3.10.1"
 
 
 [build-system]
