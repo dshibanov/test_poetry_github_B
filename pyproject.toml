@@ -6,10 +6,16 @@ authors = ["Dmitrii 108 <dmitry.shibanov@gmail.com>"]
 readme = "README.md"
 packages = [{include = "test_poetry_github_b"}]
 
+
 [tool.poetry.dependencies]
 python = "3.10.1"
 pytest = "^7.4.0"
 
+[tool.poe.tasks]
+# install-pytorch = "pip install torch==<version> torchvision=="version" torchaudio=="version" -f https://download.pytorch.org/whl/torch_stable.html"
+
+install-pytorch = "pip install torch==2.0.1+cpu -f https://download.pytorch.org/whl/torch_stable.html"
+pip-list = "pip list"
 
 [build-system]
 requires = ["poetry-core"]
